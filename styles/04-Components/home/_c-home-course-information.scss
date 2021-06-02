@@ -23,8 +23,6 @@
 
 .time-information__body,
 .additional-information__body {
-    color: $grey-700;
-    font-weight: 600;
 
     & > p ~ * {
         margin-top: 20px;
