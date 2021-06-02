@@ -750,9 +750,9 @@ h6 {
   font-weight: 700;
 }
 
-.course-description-section .circles-wrapper {
-  max-width: 80%;
-  margin: 0 auto;
+.course-description-section .circles-wrapper .border {
+  border-top: 10px dotted #FFECB3;
+  width: 100%;
 }
 
 .course-program-section {

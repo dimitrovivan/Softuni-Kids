@@ -68,7 +68,9 @@
     }
 
     .circles-wrapper {
-       max-width: 80%;
-       margin: 0 auto;
+        .border {
+         border-top: 10px dotted $orange-100;
+         width: 100%;
+        }
     }
 }
