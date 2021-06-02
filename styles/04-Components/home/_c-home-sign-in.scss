@@ -1,0 +1,68 @@
+.sign-in-section {
+    position: relative;
+    top: -50px;
+    background-color: $primary-white;
+    border-radius: 12px;
+    box-shadow: 0px 1px 2px 1px #00000024;
+    overflow: hidden;
+
+    .btn--primary {
+        padding: 16px 0;
+        width: 80%;
+        margin: 46px auto;
+    }
+
+    &__circles-wrapper {
+        position: absolute;
+        left: -8px;
+ 
+        & > * ~ * {
+            margin-left: 8px;
+        }
+
+        .circle {
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: transparent;
+            box-shadow: inset 1px 1px 1px 1px $grey-100;
+        }
+    }
+
+    &__information {
+        padding: 40px 24px 24px;
+
+        & > * ~ * {
+            margin-top: 40px;
+        }
+    }
+
+    .info-article {
+        display: grid;
+        grid-template-rows: max-content max-content;
+        grid-template-columns: max-content max-content;
+        column-gap: 24px;
+        row-gap: 6px;
+        align-items: center;
+
+        img {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        &__heading {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $grey-700;
+        }
+
+        &__description {
+            font-size: 1.9rem;
+            color: $orange-900;
+            font-weight: 700;
+        }
+
+
+    }
+}

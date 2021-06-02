@@ -277,6 +277,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   outline: none;
+  border: none;
 }
 
 button:hover {
@@ -583,5 +584,91 @@ h6 {
   text-align: center;
   font-size: 3rem;
   margin-top: 20px;
+}
+
+.c-home-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content max-content max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content max-content max-content;
+}
+
+.sign-in-section {
+  position: relative;
+  top: -50px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 1px 2px 1px #00000024;
+          box-shadow: 0px 1px 2px 1px #00000024;
+  overflow: hidden;
+}
+
+.sign-in-section .btn--primary {
+  padding: 16px 0;
+  width: 80%;
+  margin: 46px auto;
+}
+
+.sign-in-section__circles-wrapper {
+  position: absolute;
+  left: -8px;
+}
+
+.sign-in-section__circles-wrapper > * ~ * {
+  margin-left: 8px;
+}
+
+.sign-in-section__circles-wrapper .circle {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-box-shadow: inset 1px 1px 1px 1px #C4C4C4;
+          box-shadow: inset 1px 1px 1px 1px #C4C4C4;
+}
+
+.sign-in-section__information {
+  padding: 40px 24px 24px;
+}
+
+.sign-in-section__information > * ~ * {
+  margin-top: 40px;
+}
+
+.sign-in-section .info-article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content;
+  -ms-grid-columns: max-content max-content;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-in-section .info-article img {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.sign-in-section .info-article__heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #565656;
+}
+
+.sign-in-section .info-article__description {
+  font-size: 1.9rem;
+  color: #FF9100;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
