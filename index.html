@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Softuni Kids</title>
     <base href="/" />
+    <link rel="stylesheet" href="./main.css">
+    <script src="./index.js" defer></script>
 </head>
+
 <body>
-    <div class="page-wrapper">
+    <div class="home-page-wrapper">
         <nav class="top-navigation">
-            
+            <section class="top-navigation__logo-section o-flex-row o-flex--centered">
+                <div class="top-navigation__arrow"></div>
+                <div class="top-navigation__logo-wrapper o-flex-column o-flex--centered">
+                    <img src="./images/logo.svg" alt="Softuni Kids Logo">
+                    <div class="top-navigation__logo-text  o-flex-column o-flex--centered">
+                        <span class="softuni">SoftUni</span>
+                        <span class="kids">Kids</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="top-navigation__cta-section o-flex--centered o-flex-row">
+                <ul class="top-navigation__list o-flex-row o-flex--centered">
+                    <li class="top-navigation__list-item nav-link">
+                        <a href="">Обучения</a>
+                    </li>
+
+                    <li class="top-navigation__list-item nav-link">
+                        <a href="">Събития</a>
+                    </li>
+
+                    <li class="top-navigation__list-item nav-link">
+                        <a href="">Преподаватели</a>
+                    </li>
+
+                    <li class="top-navigation__list-item nav-link">
+                        <a href="">Блог</a>
+                    </li>
+
+                    <li class="top-navigation__list-item nav-link">
+                        <a href="">Контакти</a>
+                    </li>
+
+                    <li class="top-navigation__list-item nav-link">
+                        <a href="">
+                            <img src="./images/search.svg" alt="Search Image">
+                        </a>
+                    </li>
+
+                    <li class="top-navigation__list-item">
+                        <a href="" class="btn btn--primary">Вход</a>
+                    </li>
+                </ul>
+
+                <div class="burger-menu-wrapper o-flex--centered o-flex-row">
+                   <span class="burger-menu"></span>
+                </div>
+            </section>
         </nav>
         <header class="c-home-header">
 
@@ -23,4 +74,5 @@
         </footer>
     </div>
 </body>
+
 </html>

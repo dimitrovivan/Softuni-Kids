@@ -26,6 +26,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  font-size: 62.5%;
 }
 
 /*
@@ -44,6 +45,7 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 1.6rem;
 }
 
 /*
@@ -284,6 +286,7 @@ button:hover {
 a {
   font-size: 1.6rem;
   text-decoration: none;
+  color: #565656;
 }
 
 a:hover {
@@ -323,5 +326,213 @@ image {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.o-primary-wrapper {
+  padding: 0 20px;
+}
+
+.o-flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.o-flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.o-flex--centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  display: block;
+  outline: none;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--primary {
+  padding: 10px 22px 12px;
+  background-color: #FF9100;
+  color: #FFFFFF;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.top-navigation {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 5px 0px #00000033;
+          box-shadow: 0px 1px 5px 0px #00000033;
+  -webkit-box-shadow: 0px 3px 4px 0px #0000001f;
+          box-shadow: 0px 3px 4px 0px #0000001f;
+  -webkit-box-shadow: 0px 3px 5px 0px #00000024;
+          box-shadow: 0px 3px 5px 0px #00000024;
+}
+
+.top-navigation__arrow {
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 13px solid #565656;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-right: 15px;
+}
+
+.top-navigation__logo-wrapper img {
+  width: 44px;
+  height: 36px;
+}
+
+.top-navigation__logo-text {
+  color: #FF9100;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.top-navigation__logo-text .kids {
+  line-height: 1.1rem;
+}
+
+.top-navigation__list {
+  position: relative;
+}
+
+.top-navigation__list > * ~ * {
+  margin-left: 24px;
+}
+
+.top-navigation__list-item.nav-link {
+  font-weight: 500;
+  position: absolute;
+  top: -100px;
+  left: -500px;
+  -webkit-animation: name duration timing-function delay iteration-count direction fill-mode;
+          animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.top-navigation__list-item.nav-link:hover a {
+  color: #FF9100;
+}
+
+.top-navigation__list.appear {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  background-color: #E5E5E5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-navigation__list.appear .top-navigation__list-item {
+  margin: 20px;
+  position: initial;
+  top: 0px;
+  left: 0px;
+}
+
+.top-navigation__list.appear:first-child {
+  padding-top: 10px;
+}
+
+.top-navigation .burger-menu-wrapper {
+  margin-left: 24px;
+  height: 25px;
+}
+
+.top-navigation .burger-menu-wrapper:hover {
+  cursor: pointer;
+}
+
+.top-navigation .burger-menu-wrapper.open .burger-menu {
+  background: transparent;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.top-navigation .burger-menu-wrapper.open .burger-menu::before {
+  -webkit-transform: rotate(45deg) translate(0.5rem, 0.3rem);
+          transform: rotate(45deg) translate(0.5rem, 0.3rem);
+}
+
+.top-navigation .burger-menu-wrapper.open .burger-menu::after {
+  -webkit-transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+          transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+}
+
+.top-navigation .burger-menu {
+  display: block;
+  position: relative;
+}
+
+.top-navigation .burger-menu, .top-navigation .burger-menu::after, .top-navigation .burger-menu::before {
+  height: 2.3px;
+  width: 24px;
+  background-color: #565656;
+  border-radius: 1px;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+}
+
+.top-navigation .burger-menu::after, .top-navigation .burger-menu::before {
+  content: "";
+  position: absolute;
+}
+
+.top-navigation .burger-menu::after {
+  top: 6.5px;
+}
+
+.top-navigation .burger-menu::before {
+  top: -6.5px;
 }
 /*# sourceMappingURL=main.css.map */

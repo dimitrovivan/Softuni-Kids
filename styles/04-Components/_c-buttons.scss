@@ -1,0 +1,18 @@
+.btn {
+    display: block;
+    outline: none;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--primary {
+        padding: 10px 22px 12px;
+        background-color: $orange-900;
+        color: $primary-white;
+        border-radius: 100px;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+}
