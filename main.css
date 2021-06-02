@@ -835,4 +835,49 @@ h6 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+.course-information-section {
+  margin: 60px 0 100px;
+}
+
+.course-information-section .circles-wrapper {
+  margin: 42px 0;
+  border-top: 10px dotted #FFECB3;
+}
+
+.time-information__header,
+.additional-information__header {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.time-information__heading,
+.additional-information__heading {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #565656;
+  letter-spacing: 0.6px;
+  margin: 0 0 18px 20px;
+}
+
+.time-information__body,
+.additional-information__body {
+  color: #565656;
+  font-weight: 600;
+}
+
+.time-information__body > p ~ *,
+.additional-information__body > p ~ * {
+  margin-top: 20px;
+}
+
+.u-emphasize-grey {
+  font-weight: 700;
+}
+
+.u-emphasize-orange {
+  font-weight: 700;
+  color: #FF9100;
+}
 /*# sourceMappingURL=main.css.map */

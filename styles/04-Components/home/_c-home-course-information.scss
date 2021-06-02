@@ -1,0 +1,32 @@
+.course-information-section {
+    margin: 60px 0 100px;
+
+    .circles-wrapper {
+        margin: 42px 0;
+        border-top: 10px dotted $orange-100;
+    }
+}
+
+.time-information__header,
+.additional-information__header {
+    align-items: flex-start;
+}
+
+.time-information__heading,
+.additional-information__heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $grey-700;
+    letter-spacing: 0.6px;
+    margin: 0 0 18px 20px;
+}
+
+.time-information__body,
+.additional-information__body {
+    color: $grey-700;
+    font-weight: 600;
+
+    & > p ~ * {
+        margin-top: 20px;
+    }
+}
