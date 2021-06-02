@@ -1,0 +1,83 @@
+.course-program-section {
+    position: relative;
+    background-color: $orange-200;
+
+    .circles-wrapper-top {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        top: -5px;
+        border-top: 10px dotted $primary-white;
+    }
+
+    .circles-wrapper-bot {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        bottom: -5px;
+        border-top: 10px dotted $primary-white;
+    }
+}
+
+.course-program {
+    margin: 60px 0;
+
+    &__img-wrapper {
+        width: 40px;
+    }
+
+    &__heading {
+        font-weight: 600;
+        color: $grey-700;
+        font-size: 3rem;
+        margin: 0 0 30px 16px ;
+    }
+
+    &__body {
+
+        p {
+            color: $grey-700;
+            line-height: 2rem;
+        }
+
+        h6 {
+            margin: 32px 0 16px;
+            color: $grey-700;
+        }
+
+    }
+
+    &__selects {
+        display: grid;
+        row-gap: 16px;
+    }
+
+    &__skill {
+            position: relative;
+            background-color: $primary-white;
+            border-radius: 6px;
+            color: $grey-700;
+            font-size: 1.7rem;
+            font-weight: 600;
+            padding: 14px 16px;
+
+            span {
+                display: inline-block;
+                max-width: 80%;
+            }
+        
+      &::after {
+          content: '';
+          position: absolute;
+          top: 40%;
+          right: 20px;
+          color: $grey-700;
+          border: solid black;
+          border-width: 0 3px 3px 0;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(45deg);
+      }
+      
+    }
+}

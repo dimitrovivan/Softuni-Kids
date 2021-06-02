@@ -627,6 +627,7 @@ h6 {
   -webkit-box-shadow: 0px 1px 2px 1px #00000024;
           box-shadow: 0px 1px 2px 1px #00000024;
   overflow: hidden;
+  margin: 0px 20px;
 }
 
 .sign-in-section .btn--primary {
@@ -752,5 +753,86 @@ h6 {
 .course-description-section .circles-wrapper {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.course-program-section {
+  position: relative;
+  background-color: #FFCB29;
+}
+
+.course-program-section .circles-wrapper-top {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  top: -5px;
+  border-top: 10px dotted #FFFFFF;
+}
+
+.course-program-section .circles-wrapper-bot {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  bottom: -5px;
+  border-top: 10px dotted #FFFFFF;
+}
+
+.course-program {
+  margin: 60px 0;
+}
+
+.course-program__img-wrapper {
+  width: 40px;
+}
+
+.course-program__heading {
+  font-weight: 600;
+  color: #565656;
+  font-size: 3rem;
+  margin: 0 0 30px 16px;
+}
+
+.course-program__body p {
+  color: #565656;
+  line-height: 2rem;
+}
+
+.course-program__body h6 {
+  margin: 32px 0 16px;
+  color: #565656;
+}
+
+.course-program__selects {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 16px;
+}
+
+.course-program__skill {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  color: #565656;
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding: 14px 16px;
+}
+
+.course-program__skill span {
+  display: inline-block;
+  max-width: 80%;
+}
+
+.course-program__skill::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  color: #565656;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=main.css.map */
