@@ -1,0 +1,39 @@
+.footer {
+    padding: 52px 20px 32px;
+    background-color: $grey-700;
+    border-top: 12px solid $grey-500;
+
+    &__navigation {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-content: space-between;
+        row-gap: 32px;    
+
+        ul {
+
+            &:first-child {
+                margin-bottom: 4px;
+            }
+
+            & > * ~ * {
+                margin-top: 12px;
+            }
+            h6 {
+                color: $primary-white;
+            }
+
+            a {
+                color: $grey-200;
+            }
+        }
+
+    }
+
+    .policy-cpright {
+        margin-top: 32px;
+        padding-top: 32px;
+        border-top: 2px solid $grey-600;
+        text-align: center;
+        color: $grey-500;
+    }
+}
