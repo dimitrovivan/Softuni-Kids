@@ -1,0 +1,21 @@
+.c-home-header {
+    height: 300px;
+    background-color: $blue-400;
+    color: $primary-white;
+
+    &__beginner-notice {
+        padding: 4px 8px;
+        border-radius: 4px;
+        background-color: $orange-200;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .5px;
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 20px;
+    }
+}

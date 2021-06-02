@@ -6,11 +6,13 @@
 @import './styles/02-Elements/links';
 @import './styles/02-Elements/lists';
 @import './styles/02-Elements/paragraphs';
-@import './styles/02-Elements/buttons';
 @import './styles/02-Elements/images';
+@import './styles/02-Elements/headings';
 
 @import './styles//03-Objects/o-wrapper';
 @import './styles//03-Objects/o-flex';
 
 @import './styles//04-Components/c-buttons';
 @import './styles//04-Components/c-top-navigation';
+@import './styles//04-Components/home/c-home-page-wrapper';
+@import './styles//04-Components/home/c-home-header';

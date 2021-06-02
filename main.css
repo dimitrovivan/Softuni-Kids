@@ -304,28 +304,47 @@ p {
   padding: 0;
 }
 
-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  outline: none;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
 image {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-family: 'Montseratt', sans-serif;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Montseratt', sans-serif;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: 'Montseratt', sans-serif;
+  margin: 0;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-family: 'Montseratt', sans-serif;
+  margin: 0;
+}
+
+h5 {
+  font-size: 2rem;
+  font-family: 'Montseratt', sans-serif;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1.8rem;
+  font-family: 'Montseratt', sans-serif;
+  margin: 0;
 }
 
 .o-primary-wrapper {
@@ -534,5 +553,35 @@ image {
 
 .top-navigation .burger-menu::before {
   top: -6.5px;
+}
+
+.home-page-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content max-content;
+}
+
+.c-home-header {
+  height: 300px;
+  background-color: #44A9F8;
+  color: #FFFFFF;
+}
+
+.c-home-header__beginner-notice {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #FFCB29;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.c-home-header__heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
