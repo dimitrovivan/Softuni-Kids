@@ -1,0 +1,32 @@
+.contacts-page__main {
+    
+    .how-to-reach {
+        background-color: $grey-50;;
+        padding: 96px 20px;
+
+        &__heading {
+            color: $green-300;
+            font-size: 3rem;
+            margin-bottom: 48px;
+            letter-spacing: .7px;
+            line-height: 3.2rem;
+        }
+
+        &__list-heading {
+            color: $green-300;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        &__list-item {
+            margin-bottom: 12px;
+        }
+
+        &__navigation {
+            & > * ~ * {
+                margin-top: 46px;
+            }
+        }
+    }
+}
