@@ -1,0 +1,28 @@
+.contacts-page__main {
+
+    .contact-form {
+       padding: 46px 20px 96px;
+
+       &__heading {
+           color: $green-300;
+           letter-spacing: .7px;
+           margin-bottom: 32px;
+           text-align: center;
+       }
+
+       input,
+       textarea {
+           border-radius: 6px;
+           border: 1px solid $grey-500;
+           padding: 12px;
+           width: 100%;
+           margin-bottom: 32px;
+           outline: none;
+        }
+
+        textarea.message {
+            height: 200px;
+        }
+
+    }
+}

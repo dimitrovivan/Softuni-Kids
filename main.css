@@ -1109,6 +1109,31 @@ h6 {
   font-weight: 700;
 }
 
+.contacts-page__main .contact-form {
+  padding: 46px 20px 96px;
+}
+
+.contacts-page__main .contact-form__heading {
+  color: #41BEAD;
+  letter-spacing: .7px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.contacts-page__main .contact-form input,
+.contacts-page__main .contact-form textarea {
+  border-radius: 6px;
+  border: 1px solid #919191;
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 32px;
+  outline: none;
+}
+
+.contacts-page__main .contact-form textarea.message {
+  height: 200px;
+}
+
 .u-emphasize-grey {
   font-weight: 700;
   color: #565656;
