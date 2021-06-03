@@ -1,0 +1,29 @@
+.softuni-team {
+    padding: 48px 20px;
+
+    &__director,
+    &__team-leader {
+        margin-bottom: 72px;
+    }
+
+        .director-description,
+        .leader-description {
+            p {
+                font-weight: 400;
+                line-height: 2rem;
+            }
+    }
+
+    .circle-border {
+        max-width: 100%;
+        border-top: 10px dotted $green-50;
+        margin-bottom: 64px;
+    }
+
+    &__trainers {
+
+        .image-card {
+            margin-bottom: 48px;
+        }
+    }
+}

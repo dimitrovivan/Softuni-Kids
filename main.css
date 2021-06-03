@@ -927,6 +927,69 @@ h6 {
   line-height: 2rem;
 }
 
+.softuni-team {
+  padding: 48px 20px;
+}
+
+.softuni-team__director, .softuni-team__team-leader {
+  margin-bottom: 72px;
+}
+
+.softuni-team .director-description p,
+.softuni-team .leader-description p {
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.softuni-team .circle-border {
+  max-width: 100%;
+  border-top: 10px dotted #DFF4F1;
+  margin-bottom: 64px;
+}
+
+.softuni-team__trainers .image-card {
+  margin-bottom: 48px;
+}
+
+.image-card {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.image-card__frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+  width: 175px;
+  height: 172px;
+  border: 8px solid #41BEAD;
+}
+
+.image-card__frame,
+.image-card__frame img {
+  border-radius: 50%;
+}
+
+.image-card__heading {
+  color: #41BEAD;
+  margin-bottom: 10px;
+}
+
+.image-card__position {
+  color: #B2B2B2;
+  font-size: 1.4rem;
+}
+
 .u-emphasize-grey {
   font-weight: 700;
   color: #565656;

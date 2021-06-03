@@ -1,0 +1,30 @@
+.image-card {
+    width: max-content;
+    margin: 0 auto 24px;
+    text-align: center;
+    &__frame {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 32px;
+        width: 175px;
+        height: 172px;
+        border: 8px solid $green-300;
+        &,
+        img {
+        border-radius: 50%;
+        }
+    }
+
+    &__heading {
+        color: $green-300;
+        margin-bottom: 10px;
+    }
+
+    &__position {
+        color: $grey-400;
+        font-size: 1.4rem;
+    }
+
+
+}
