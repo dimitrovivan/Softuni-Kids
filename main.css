@@ -901,6 +901,32 @@ h6 {
   margin-top: 20px;
 }
 
+.trainers-page-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content, max-content, max-content, max-content, max-content;
+      grid-template-columns: -webkit-max-content, -webkit-max-content, -webkit-max-content, -webkit-max-content, -webkit-max-content;
+      grid-template-columns: max-content, max-content, max-content, max-content, max-content;
+}
+
+.header {
+  color: #FFFFFF;
+  background-color: #FFB402;
+  padding: 64px 20px;
+  text-align: center;
+}
+
+.header__heading {
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+
+.header__description {
+  color: #FFFFFF;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
 .u-emphasize-grey {
   font-weight: 700;
   color: #565656;
