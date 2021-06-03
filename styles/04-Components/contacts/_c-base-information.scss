@@ -1,0 +1,57 @@
+.contacts-page__main {
+
+    .base-information {
+        background-color: $primary-white;
+        padding: 32px;
+        // border-radius: 12px;
+        // box-shadow: 0px 1px 3px 2px #00000033;
+        // box-shadow: 0px 2px 2px 2px #0000001f;
+        // box-shadow: 0px 0px 2px 2px #00000024;
+        // max-width: 50%;
+        // position: relative;
+        // left: 40%;
+        // top: 20px;
+        // transform: translate(-50%,-50%);
+
+        .description,
+        .hours {
+            font-weight: 400;
+        }
+
+        .description {
+            color: $grey-700;
+        }
+
+        .work-time-description {
+            display: grid;
+            grid-template-columns: max-content auto;
+            column-gap: 20px;
+            row-gap: 25px;
+        }
+
+
+        .hours {
+            color: $orange-900;
+        }
+
+        h5 {
+            color: $green-300;
+            font-weight: 500;
+            margin-bottom: 18px;
+        }
+
+        &__body {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 220px);
+            row-gap: 48px;
+            column-gap: 24px;
+        }
+
+        &__footer {
+            .btn--secondary {
+                margin-top: 46px;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -403,6 +403,14 @@ h6 {
           box-shadow: 0px 4px 5px 2px #0000001F;
 }
 
+.btn--secondary {
+  background: none;
+  color: #FF9100;
+  border: 1px solid #FF9100;
+  border-radius: 100px;
+  padding: 14px 32px 16px;
+}
+
 .top-navigation {
   position: relative;
   top: 0;
@@ -1049,6 +1057,56 @@ h6 {
 .take-part-in .submit-form .btn--primary {
   width: 100%;
   margin-top: 46px;
+}
+
+.contacts-page__main .base-information {
+  background-color: #FFFFFF;
+  padding: 32px;
+}
+
+.contacts-page__main .base-information .description,
+.contacts-page__main .base-information .hours {
+  font-weight: 400;
+}
+
+.contacts-page__main .base-information .description {
+  color: #565656;
+}
+
+.contacts-page__main .base-information .work-time-description {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content auto;
+      grid-template-columns: -webkit-max-content auto;
+      grid-template-columns: max-content auto;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 25px;
+}
+
+.contacts-page__main .base-information .hours {
+  color: #FF9100;
+}
+
+.contacts-page__main .base-information h5 {
+  color: #41BEAD;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.contacts-page__main .base-information__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (220px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 220px);
+  row-gap: 48px;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.contacts-page__main .base-information__footer .btn--secondary {
+  margin-top: 46px;
+  font-weight: 700;
 }
 
 .u-emphasize-grey {
