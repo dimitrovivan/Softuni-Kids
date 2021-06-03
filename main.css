@@ -911,19 +911,19 @@ h6 {
       grid-template-columns: max-content, max-content, max-content, max-content, max-content;
 }
 
-.header {
+.trainers-page-header {
   color: #FFFFFF;
   background-color: #FFB402;
   padding: 64px 20px;
   text-align: center;
 }
 
-.header__heading {
+.trainers-page-header__heading {
   font-weight: 600;
   margin: 0 0 24px;
 }
 
-.header__description {
+.trainers-page-header__description {
   color: #FFFFFF;
   font-weight: 400;
   line-height: 2rem;
