@@ -5,9 +5,11 @@
 
     &__navigation {
         display: grid;
-        grid-template-columns: max-content max-content;
+        grid-template-columns: repeat(auto-fit, 190px);
         justify-content: space-between;
-        row-gap: 32px;    
+        column-gap: 25px;
+        row-gap: 40px;
+     
 
         ul {
 
