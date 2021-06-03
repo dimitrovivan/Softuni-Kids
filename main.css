@@ -399,6 +399,8 @@ h6 {
   border-radius: 100px;
   font-weight: 600;
   font-size: 1.6rem;
+  -webkit-box-shadow: 0px 4px 5px 2px #0000001F;
+          box-shadow: 0px 4px 5px 2px #0000001F;
 }
 
 .top-navigation {
@@ -988,6 +990,65 @@ h6 {
 .image-card__position {
   color: #B2B2B2;
   font-size: 1.4rem;
+}
+
+.take-part-in {
+  background-color: #66B9F8;
+  padding: 64px 20px;
+  border-top: 12px solid #92CDFB;
+}
+
+.take-part-in input, .take-part-in__heading, .take-part-in__description {
+  color: #FFFFFF;
+}
+
+.take-part-in__heading {
+  margin-bottom: 24px;
+  line-height: 3rem;
+}
+
+.take-part-in__description {
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 48px;
+}
+
+.take-part-in .submit-form > * ~ input {
+  margin-top: 36px;
+}
+
+.take-part-in .submit-form input {
+  display: block;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  background: transparent;
+  padding: 16px;
+  width: 100%;
+}
+
+.take-part-in .submit-form input, .take-part-in .submit-form input::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.take-part-in .submit-form input, .take-part-in .submit-form input:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.take-part-in .submit-form input, .take-part-in .submit-form input::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.take-part-in .submit-form input, .take-part-in .submit-form input::placeholder {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.take-part-in .submit-form .btn--primary {
+  width: 100%;
+  margin-top: 46px;
 }
 
 .u-emphasize-grey {

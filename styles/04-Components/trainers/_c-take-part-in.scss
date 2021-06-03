@@ -1,0 +1,49 @@
+.take-part-in {
+    background-color: $blue-300;
+    padding: 64px 20px;
+    border-top: 12px solid $blue-200;
+
+    input,
+    &__heading,
+    &__description {
+        color: $primary-white;
+    }
+
+    &__heading {
+        margin-bottom: 24px;
+        line-height: 3rem;
+    }
+
+    &__description {
+        font-weight: 400;
+        line-height: 2rem;
+        margin-bottom: 48px;
+    }
+
+    .submit-form {
+
+        & > * ~ input {
+            margin-top: 36px;
+        }
+
+    input {
+        display: block;
+        border: 1px solid $primary-white;
+        border-radius: 6px;
+        background: transparent;
+        padding: 16px;
+        width: 100%;
+
+        &,
+        &::placeholder {
+            color: $primary-white;
+            font-weight: 400;
+        }
+    }
+
+    .btn--primary {
+        width: 100%;
+        margin-top: 46px;
+    }
+  }
+}
