@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
 Use a better box model (opinionated).
 */
@@ -1214,6 +1215,35 @@ h6 {
         grid-template-rows: max-content max-content max-content max-content;
     row-gap: 20px;
   }
+}
+
+.softuni-team__all-trainers .image-card__frame:hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.softuni-team__all-trainers .image-card__frame:hover::after, .softuni-team__all-trainers .image-card__frame:hover::before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.softuni-team__all-trainers .image-card__frame:hover::after {
+  content: 'i';
+  border-radius: 50%;
+  font-size: 52px;
+  top: 35px;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+
+.softuni-team__all-trainers .image-card__frame:hover::before {
+  content: 'научете още';
+  font-size: 14px;
+  top: 100px;
+  color: #FFFFFF;
+  font-weight: 600;
 }
 
 .image-card {

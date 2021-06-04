@@ -54,5 +54,34 @@
             row-gap: 20px;
         }
 
+        .image-card__frame:hover {
+            position: relative;
+            cursor: pointer;
+
+            &::after,
+            &::before {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+    
+            &::after {
+               content: 'i';
+               border-radius: 50%;
+               font-size: 52px;
+               top: 35px;
+               color: $primary-white;
+               font-weight: 900;
+            }
+
+            &::before {
+                content: 'научете още';
+                font-size: 14px;
+                top: 100px;
+                color: $primary-white;
+                font-weight: 600;
+             }
+        }
+
     }
 }
