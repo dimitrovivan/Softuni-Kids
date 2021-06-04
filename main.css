@@ -1475,6 +1475,13 @@ h6 {
   padding: 46px 20px 96px;
 }
 
+@media (min-width: 900px) {
+  .contacts-page__main .contact-form {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
 .contacts-page__main .contact-form__heading {
   color: #41BEAD;
   letter-spacing: .7px;
