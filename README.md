@@ -10,4 +10,6 @@ Mobile First | Workshop | Softuni Exam
 HTML5, CSS3, SASS, Javascript
 
 ## Overview
+Home Page, Contact And Trainers pages avaiable from navigation
+
 https://dimitrovivan.github.io/Softuni-Kids/
