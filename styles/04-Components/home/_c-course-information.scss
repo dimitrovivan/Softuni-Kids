@@ -4,6 +4,27 @@
     .circles-wrapper {
         margin: 42px 0;
         border-top: 10px dotted $orange-100;
+
+        @include for-tablet-landscape-up {
+            align-self: stretch;
+            border-top: none;
+            border-right: 10px dotted $orange-100;
+            margin: 0;
+        }
+    }
+
+    &__inner-content-wrapper {
+        @include for-tablet-landscape-up {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.time-information,
+.additional-information {
+    @include for-tablet-landscape-up {
+        max-width: 40%;
     }
 }
 
@@ -23,7 +44,6 @@
 
 .time-information__body,
 .additional-information__body {
-
     & > p ~ * {
         margin-top: 20px;
     }

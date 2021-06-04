@@ -1030,6 +1030,35 @@ h6 {
   border-top: 10px dotted #FFECB3;
 }
 
+@media (min-width: 900px) {
+  .course-information-section .circles-wrapper {
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    border-top: none;
+    border-right: 10px dotted #FFECB3;
+    margin: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .course-information-section__inner-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .time-information,
+  .additional-information {
+    max-width: 40%;
+  }
+}
+
 .time-information__header,
 .additional-information__header {
   -webkit-box-align: start;
