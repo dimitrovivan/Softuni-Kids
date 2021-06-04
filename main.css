@@ -592,31 +592,6 @@ h6 {
   top: -6.5px;
 }
 
-.circles-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.circle {
-  display: block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.circle--grey {
-  background: transparent;
-  -webkit-box-shadow: inset 1px 1px 1px 1px #C4C4C4;
-          box-shadow: inset 1px 1px 1px 1px #C4C4C4;
-}
-
 .footer {
   padding: 52px 20px 32px;
   background-color: #565656;
@@ -710,13 +685,46 @@ h6 {
   -webkit-box-shadow: 0px 1px 2px 1px #00000024;
           box-shadow: 0px 1px 2px 1px #00000024;
   overflow: hidden;
-  margin: 0px 20px;
+  margin: 0 20px;
+}
+
+@media (min-width: 900px) {
+  .sign-in-section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 80%;
+        grid-template-columns: 20% 80%;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+    margin: 0 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sign-in-section {
+    margin: 0 75px;
+  }
 }
 
 .sign-in-section .btn--primary {
-  padding: 16px 0;
+  padding: 16px 22px;
   width: 80%;
   margin: 46px auto;
+}
+
+@media (min-width: 600px) {
+  .sign-in-section .btn--primary {
+    width: 60%;
+  }
+}
+
+@media (min-width: 900px) {
+  .sign-in-section .btn--primary {
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 .sign-in-section__information {
@@ -725,6 +733,26 @@ h6 {
 
 .sign-in-section__information > * ~ * {
   margin-top: 40px;
+}
+
+@media (min-width: 900px) {
+  .sign-in-section__information {
+    padding: 0;
+    margin: 20px 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (200px)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 200px);
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    row-gap: 30px;
+  }
+  .sign-in-section__information > * ~ * {
+    margin-top: 0;
+  }
 }
 
 .sign-in-section .info-article {
@@ -760,15 +788,6 @@ h6 {
   font-size: 1.9rem;
   color: #FF9100;
   font-weight: 700;
-}
-
-.sign-in-section .circles-wrapper {
-  position: absolute;
-  left: -8px;
-}
-
-.sign-in-section .circles-wrapper > * ~ * {
-  margin-left: 8px;
 }
 
 .course-description-section__text-article > * ~ * {
