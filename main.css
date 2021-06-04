@@ -940,6 +940,26 @@ h6 {
   margin: 60px 0;
 }
 
+@media (min-width: 900px) {
+  .course-program__inner-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .course-program__main-info {
+    max-width: 55%;
+  }
+}
+
 .course-program__img-wrapper {
   width: 40px;
 }
@@ -958,6 +978,12 @@ h6 {
 .course-program__body h6 {
   margin: 32px 0 16px;
   color: #565656;
+}
+
+@media (min-width: 900px) {
+  .course-program__notebook-image-wrapper {
+    max-width: 35%;
+  }
 }
 
 .course-program__selects {

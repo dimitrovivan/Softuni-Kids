@@ -20,7 +20,24 @@
 }
 
 .course-program {
+
     margin: 60px 0;
+
+    &__inner-content-wrapper {
+       
+        @include for-tablet-landscape-up {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+
+    &__main-info {
+
+        @include for-tablet-landscape-up {
+            max-width: 55%;
+        }
+    }
 
     &__img-wrapper {
         width: 40px;
@@ -44,6 +61,13 @@
             color: $grey-700;
         }
 
+    }
+
+    &__notebook-image-wrapper {
+        
+        @include for-tablet-landscape-up {
+            max-width: 35%;
+        }
     }
 
     &__selects {
