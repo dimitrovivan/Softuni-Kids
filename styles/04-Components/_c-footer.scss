@@ -1,7 +1,21 @@
 .footer {
+    position: relative;
     padding: 52px 20px 32px;
     background-color: $grey-700;
     border-top: 12px solid $grey-500;
+
+    &__toy-image-wrapper {
+        display: none;
+
+        @include for-tablet-landscape-up {
+            max-width: 220px;
+            height: auto;
+            display: block;
+            position: absolute;
+            top: -90px;
+            left: 40px;
+        }
+    }
 
     &__navigation {
         display: grid;
@@ -9,10 +23,20 @@
         justify-content: space-between;
         column-gap: 25px;
         row-gap: 40px;
-     
+        width: 80%;
+        margin-bottom: 30px;
+        
+        @include for-tablet-landscape-up {
+            max-width: 60%;
+            margin-left: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include for-desktop-up {
+            max-width: 75%;
+        }
 
         ul {
-
             &:first-child {
                 margin-bottom: 4px;
             }
@@ -28,7 +52,6 @@
                 color: $grey-200;
             }
         }
-
     }
 
     .policy-cpright {

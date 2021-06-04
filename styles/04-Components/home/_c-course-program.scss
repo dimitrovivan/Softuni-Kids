@@ -64,8 +64,10 @@
     }
 
     &__notebook-image-wrapper {
+        display: none;
         
         @include for-tablet-landscape-up {
+            display: block;
             max-width: 35%;
         }
     }
