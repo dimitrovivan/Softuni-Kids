@@ -1,7 +1,17 @@
 .take-part-in {
     background-color: $blue-300;
-    padding: 64px 20px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     border-top: 12px solid $blue-200;
+
+    &__header {
+        
+        @include for-tablet-portrait-up {
+            text-align: center;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
 
     input,
     &__heading,
@@ -22,17 +32,36 @@
 
     .submit-form {
 
-        & > * ~ input {
-            margin-top: 36px;
+        display: grid;
+        grid-template-rows: max-content max-content max-content max-content;
+        row-gap: 32px;
+
+        @include for-tablet-landscape-up {
+            display: flex;
         }
 
-    input {
+        @include for-desktop-up {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        input {
         display: block;
         border: 1px solid $primary-white;
         border-radius: 6px;
         background: transparent;
         padding: 16px;
         width: 100%;
+
+        @include for-tablet-portrait-up {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        @include for-tablet-landscape-up {
+            flex: 1;
+            margin: 0 30px 0 0;
+        }
 
         &,
         &::placeholder {
@@ -43,7 +72,19 @@
 
     .btn--primary {
         width: 100%;
-        margin-top: 46px;
+        padding-left: 32px;
+        padding-right: 32px;
+        margin-top: 12px;
+
+        @include for-tablet-portrait-up {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        @include for-tablet-landscape-up {
+            width: max-content;
+        }
+
     }
   }
 }

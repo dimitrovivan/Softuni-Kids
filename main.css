@@ -1287,8 +1287,17 @@ h6 {
 
 .take-part-in {
   background-color: #66B9F8;
-  padding: 64px 20px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   border-top: 12px solid #92CDFB;
+}
+
+@media (min-width: 600px) {
+  .take-part-in__header {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .take-part-in input, .take-part-in__heading, .take-part-in__description {
@@ -1306,8 +1315,28 @@ h6 {
   margin-bottom: 48px;
 }
 
-.take-part-in .submit-form > * ~ input {
-  margin-top: 36px;
+.take-part-in .submit-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content max-content max-content max-content;
+      grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+      grid-template-rows: max-content max-content max-content max-content;
+  row-gap: 32px;
+}
+
+@media (min-width: 900px) {
+  .take-part-in .submit-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .take-part-in .submit-form {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .take-part-in .submit-form input {
@@ -1317,6 +1346,22 @@ h6 {
   background: transparent;
   padding: 16px;
   width: 100%;
+}
+
+@media (min-width: 600px) {
+  .take-part-in .submit-form input {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .take-part-in .submit-form input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 30px 0 0;
+  }
 }
 
 .take-part-in .submit-form input, .take-part-in .submit-form input::-webkit-input-placeholder {
@@ -1341,7 +1386,24 @@ h6 {
 
 .take-part-in .submit-form .btn--primary {
   width: 100%;
-  margin-top: 46px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-top: 12px;
+}
+
+@media (min-width: 600px) {
+  .take-part-in .submit-form .btn--primary {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .take-part-in .submit-form .btn--primary {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }
 
 .contacts-page__main .base-information {
