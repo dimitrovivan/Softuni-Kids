@@ -38,6 +38,7 @@
 
         @include for-tablet-landscape-up {
             display: flex;
+            padding-bottom: 100px;
         }
 
         @include for-desktop-up {
