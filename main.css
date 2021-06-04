@@ -794,9 +794,35 @@ h6 {
   margin-top: 24px;
 }
 
+@media (min-width: 900px) {
+  .course-description-section__text-article {
+    max-width: 55%;
+  }
+}
+
+@media (min-width: 900px) {
+  .course-description-section__text-video-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .course-description-section__video-wrapper {
   position: relative;
   margin-top: 30px;
+}
+
+@media (min-width: 900px) {
+  .course-description-section__video-wrapper {
+    max-width: 40%;
+  }
 }
 
 .course-description-section__video-wrapper .video-play-btn {
@@ -814,12 +840,41 @@ h6 {
   cursor: pointer;
 }
 
+@media (min-width: 900px) {
+  .course-description-section__summary-information-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 96px 0 76px;
+  }
+}
+
 .course-description-section__appropriate-for {
   margin: 60px 0 40px;
 }
 
+@media (min-width: 900px) {
+  .course-description-section__appropriate-for {
+    max-width: 40%;
+    margin: 0 30px 0 0;
+  }
+}
+
 .course-description-section__important-section {
   margin: 40px 0 60px;
+}
+
+@media (min-width: 900px) {
+  .course-description-section__important-section {
+    max-width: 40%;
+    margin: 0 0 0 70px;
+  }
 }
 
 .course-description-section__appropriate-for img, .course-description-section__important-section img {
@@ -847,6 +902,17 @@ h6 {
 .course-description-section .circles-wrapper {
   border-top: 10px dotted #FFECB3;
   width: 100%;
+}
+
+@media (min-width: 900px) {
+  .course-description-section .circles-wrapper {
+    border-top: none;
+    border-left: 10px dotted #FFECB3;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    width: 0;
+  }
 }
 
 .course-program-section {
