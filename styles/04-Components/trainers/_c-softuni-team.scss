@@ -1,9 +1,22 @@
 .softuni-team {
-    padding: 48px 20px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    &__superior {
+        
+        @include for-tablet-landscape-up {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
 
     &__director,
     &__team-leader {
         margin-bottom: 72px;
+
+        @include for-tablet-landscape-up {
+            max-width: 45%;
+        }
     }
 
         .director-description,
@@ -22,8 +35,24 @@
 
     &__trainers {
 
+        @include for-tablet-landscape-up {
+            display: none;
+        }
+
         .image-card {
             margin-bottom: 48px;
         }
+    }
+
+    &__all-trainers {
+        display: none;
+
+        @include for-tablet-landscape-up {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: max-content max-content max-content max-content;
+            row-gap: 20px;
+        }
+
     }
 }

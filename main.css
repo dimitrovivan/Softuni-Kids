@@ -1126,30 +1126,55 @@ h6 {
       grid-template-columns: max-content, max-content, max-content, max-content, max-content;
 }
 
-.trainers-page-header {
+.trainers-page__header {
   color: #FFFFFF;
   background-color: #FFB402;
   padding: 64px 20px;
   text-align: center;
 }
 
-.trainers-page-header__heading {
+.trainers-page__heading {
   font-weight: 600;
   margin: 0 0 24px;
 }
 
-.trainers-page-header__description {
+.trainers-page__description {
   color: #FFFFFF;
   font-weight: 400;
   line-height: 2rem;
 }
 
+@media (min-width: 900px) {
+  .trainers-page__description {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
 .softuni-team {
-  padding: 48px 20px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+@media (min-width: 900px) {
+  .softuni-team__superior {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .softuni-team__director, .softuni-team__team-leader {
   margin-bottom: 72px;
+}
+
+@media (min-width: 900px) {
+  .softuni-team__director, .softuni-team__team-leader {
+    max-width: 45%;
+  }
 }
 
 .softuni-team .director-description p,
@@ -1164,8 +1189,31 @@ h6 {
   margin-bottom: 64px;
 }
 
+@media (min-width: 900px) {
+  .softuni-team__trainers {
+    display: none;
+  }
+}
+
 .softuni-team__trainers .image-card {
   margin-bottom: 48px;
+}
+
+.softuni-team__all-trainers {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .softuni-team__all-trainers {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: max-content max-content max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content max-content max-content;
+    row-gap: 20px;
+  }
 }
 
 .image-card {
