@@ -1,3 +1,11 @@
 .o-primary-wrapper {
     padding: 0 20px;
+
+    @include for-tablet-landscape-up {
+        padding: 0 45px;
+    }
+
+    @include for-desktop-up {
+        padding: 0 75px;
+    }
 }
