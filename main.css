@@ -672,6 +672,10 @@ h6 {
   height: 300px;
   background-color: #44A9F8;
   color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 68px;
 }
 
 .c-home-header__beginner-notice {
