@@ -7,7 +7,7 @@ Mobile First | Workshop | Softuni Exam
  It's following the BEM methodology and ITCSS architecture.
  
 ## Tech stack:
-HTML5, CSS3, SASS, Javascript
+HTML5, SCSS, Javascript
 
 ## Overview
 Home Page, Contact And Trainers pages avaiable from navigation
